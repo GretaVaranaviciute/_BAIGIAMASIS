@@ -55,17 +55,17 @@ namespace manoVaistine.Page
 
         public void AssertKMIBubblePosition(string KMIEvaluation)
         {
-            if (KMIEvaluation == "Normal")
+            if ("Normal".Equals(KMIEvaluation))
             {
                 IWebElement bubbleInNormal = KMIGreenLine.FindElement(By.CssSelector(".kmi-result-bubble"));
                 Assert.IsTrue(bubbleInNormal.Displayed);
             }
-            else if (KMIEvaluation == "Subnormal")
+            else if ("Subnormal".Equals(KMIEvaluation))
             {
                 IWebElement bubbleInSubnormal = KMISubnormalLine.FindElement(By.CssSelector(".kmi-result-bubble"));
                 Assert.IsTrue(bubbleInSubnormal.Displayed);
             }
-            else if (KMIEvaluation == "Abnormal")
+            else if ("Abnormal".Equals(KMIEvaluation))
             {
                 IWebElement bubbleInAbnormal = KMIAbnormalLine.FindElement(By.CssSelector(".kmi-result-bubble"));
                 Assert.IsTrue(bubbleInAbnormal.Displayed);
