@@ -70,9 +70,12 @@ namespace manoVaistine.Page
 
          public void SelectItem()
          {
+            if (productList.Count > 0)
+            {
             IWebElement firstResultElement = productList.ElementAt(0);
             firstResultElement.Click();
             Wait_Until_Loading_Invisible();
+            }
          }
 
     }
