@@ -23,7 +23,6 @@ namespace manoVaistine.Test
         }
 
         [Test]
-        [Order(1)]
         public static void TestRemoveFunctionInCart()
         {
             manoVaistineHomePage.NavigateToPage();
